@@ -20,6 +20,15 @@ public class Combination {
         }
 
     }
+
+    /**
+     * 조합 by 백트래킹
+     * @param arr : 조합을 뽑아낼 배열
+     * @param visited : 조합에 뽑혔는지 확인하는 배열
+     * @param start : 기준 인덱스
+     * @param n : 배열의 길이 (=총 요소 개수)
+     * @param r : 조합의 길이 (=뽑을 개수)
+     */
     public static void combination(int[] arr, boolean[] visited, int start, int n, int r) {
         if (r == 0) { // r개의 조합이 생성된 경우 print
             print(arr, visited);
